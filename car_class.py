@@ -4,13 +4,13 @@ class Car(object):
 		self.model = model
 		self.name = name
 		
-	def car_doors(self)
+	def car_doors(self):
 		if self.name == 'Koenigsegg' or self.name =='Porshe':
 			return 2
 		else:
 			return 4
 
-	def car_wheels(self)
+	def car_wheels(self):
 		if self.type == 'trailer':
 			return 8
 		else:
@@ -21,14 +21,13 @@ class Car(object):
 		else:
 			return False
 
-	def drive_car(self,x):
+	def drive(self,x):
 		if x == 3:
-            self.speed = 1000
-
-        elif x == 7:
-            self.speed = 77
-        else:
-            self.speed = 56
-        return self
+			self.speed = 1000
+		elif x == 7:
+			self.speed = 77
+		else:
+			self.speed = 56
+		return self
 
 
